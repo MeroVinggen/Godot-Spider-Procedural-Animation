@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://ge1d51ykpnmc"]
+
+[ext_resource type="Script" uid="uid://bebqmmsthytvv" path="res://scenes/CameraFree/camera_free.gd" id="1_jon8y"]
+
+[node name="CameraFree" type="Camera3D"]
+script = ExtResource("1_jon8y")
