@@ -19,7 +19,29 @@ sky = SubResource("Sky_pn2l2")
 tonemap_mode = 2
 glow_enabled = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d0ffk"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ax2ie"]
+render_priority = 0
+shader = ExtResource("5_2a3xb")
+shader_parameter/world_uv = false
+shader_parameter/object_uv = false
+shader_parameter/object_uv_scale = Vector2(1, 1)
+shader_parameter/preset_color = 0
+shader_parameter/base_color = Color(0, 0, 0, 1)
+shader_parameter/metalic = 0.25
+shader_parameter/roughness = 0.75
+shader_parameter/grid_scale = 1.0
+shader_parameter/grid_width = 0.0
+shader_parameter/grid_color = Color(0.8, 0.8, 0.8, 1)
+shader_parameter/inside_scale = 0.0
+shader_parameter/inside_width = 0.01
+shader_parameter/inside_color = Color(0.8, 0.8, 0.8, 0.8)
+shader_parameter/checkered = true
+shader_parameter/sub_checkered_grid = true
+shader_parameter/checkered_color = Color(0.47397572, 0.47397578, 0.4739756, 1)
+shader_parameter/checkered_blend_color = 0.400000019
+shader_parameter/use_inside_uv = false
+shader_parameter/use_albedo_color = false
+shader_parameter/albedo_alpha = 0.5
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_x12dy"]
 _surfaces = [{
@@ -42,7 +64,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_d0ffk"),
+"material": SubResource("ShaderMaterial_ax2ie"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
@@ -50,8 +72,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_x12dy")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_srogf"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_a43rq"]
 _surfaces = [{
@@ -74,7 +94,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_srogf"),
+"material": SubResource("ShaderMaterial_ax2ie"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
@@ -82,8 +102,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_a43rq")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j6wfr"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_wjwqk"]
 _surfaces = [{
@@ -106,7 +124,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_j6wfr"),
+"material": SubResource("ShaderMaterial_ax2ie"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
@@ -114,8 +132,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_wjwqk")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_26va7"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sjnro"]
 _surfaces = [{
@@ -138,7 +154,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_26va7"),
+"material": SubResource("ShaderMaterial_ax2ie"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
@@ -146,8 +162,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_sjnro")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3hjp8"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sb1mj"]
 _surfaces = [{
@@ -170,7 +184,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_3hjp8"),
+"material": SubResource("ShaderMaterial_ax2ie"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
@@ -178,8 +192,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_sb1mj")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_emexe"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_k0qse"]
 _surfaces = [{
@@ -202,7 +214,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_emexe"),
+"material": SubResource("ShaderMaterial_ax2ie"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
@@ -210,8 +222,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_k0qse")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t277l"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_tlabj"]
 _surfaces = [{
@@ -234,7 +244,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_t277l"),
+"material": SubResource("ShaderMaterial_ax2ie"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
@@ -242,8 +252,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_tlabj")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_601pl"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_745it"]
 _surfaces = [{
@@ -266,7 +274,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_601pl"),
+"material": SubResource("ShaderMaterial_ax2ie"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
@@ -274,8 +282,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_745it")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u1ada"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ib1s4"]
 _surfaces = [{
@@ -298,7 +304,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_u1ada"),
+"material": SubResource("ShaderMaterial_ax2ie"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
@@ -306,8 +312,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ib1s4")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ngpxt"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_jyqi2"]
 _surfaces = [{
@@ -330,7 +334,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_ngpxt"),
+"material": SubResource("ShaderMaterial_ax2ie"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
@@ -338,8 +342,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_jyqi2")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8jqnq"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ts3kg"]
 _surfaces = [{
@@ -362,7 +364,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_8jqnq"),
+"material": SubResource("ShaderMaterial_ax2ie"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
@@ -370,8 +372,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ts3kg")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yuka8"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gqp71"]
 _surfaces = [{
@@ -394,7 +394,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_yuka8"),
+"material": SubResource("ShaderMaterial_ax2ie"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 24,
@@ -402,8 +402,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_gqp71")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pv1l6"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1wex6"]
 _surfaces = [{
@@ -426,7 +424,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 108,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUA"),
-"material": SubResource("StandardMaterial3D_pv1l6"),
+"material": SubResource("ShaderMaterial_ax2ie"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 72,
@@ -643,7 +641,6 @@ shader_parameter/albedo_alpha = 0.5
 
 [node name="SpiderMovementIk" type="Node3D" unique_id=1659089122]
 script = ExtResource("1_ek83b")
-show_debug_items = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1867976771]
 environment = SubResource("Environment_sj4ut")
@@ -906,7 +903,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5023032, 0)
 mesh = SubResource("ArrayMesh_x1vqn")
 
 [node name="CCDIK3D_FL" type="CCDIK3D" parent="giant-spider/Armature_006/Skeleton3D" unique_id=598162201]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.039948, 6.4043818, -18.884935)
 angular_delta_limit = 0.4363323129985824
 deterministic = true
 setting_count = 2
@@ -936,7 +932,6 @@ settings/1/joints/2/rotation_axis = 3
 settings/1/joints/2/limitation = null
 
 [node name="CCDIK3D_FR" type="CCDIK3D" parent="giant-spider/Armature_006/Skeleton3D" unique_id=1679639238]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.039948, 6.4043818, -18.884935)
 max_iterations = 6
 angular_delta_limit = 0.4363323129985824
 deterministic = true
@@ -967,7 +962,6 @@ settings/1/joints/2/rotation_axis = 3
 settings/1/joints/2/limitation = null
 
 [node name="CCDIK3D_BR" type="CCDIK3D" parent="giant-spider/Armature_006/Skeleton3D" unique_id=1603675671]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.039948, 6.4043818, -18.884935)
 max_iterations = 6
 angular_delta_limit = 0.4363323129985824
 deterministic = true
@@ -998,7 +992,6 @@ settings/1/joints/2/rotation_axis = 3
 settings/1/joints/2/limitation = null
 
 [node name="CCDIK3D_BL" type="CCDIK3D" parent="giant-spider/Armature_006/Skeleton3D" unique_id=918299297]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.039948, 6.4043818, -18.884935)
 max_iterations = 6
 angular_delta_limit = 0.4363323129985824
 deterministic = true
@@ -1042,7 +1035,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7398248, -7.7955647, 11.416
 
 [node name="Yellow" type="CSGBox3D" parent="giant-spider/Armature_006/StepItemsWrap/FL_Target" unique_id=905248660 groups=["debug_item"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29707646, 0)
-visible = false
 size = Vector3(0.38, 1.44, 0.935)
 material = SubResource("StandardMaterial3D_npipk")
 
@@ -1053,7 +1045,6 @@ top_level = true
 
 [node name="Green" type="CSGBox3D" parent="giant-spider/Armature_006/StepItemsWrap/FL_Cur" unique_id=1853403737 groups=["debug_item"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6079626, 0)
-visible = false
 size = Vector3(1, 0.31, 1)
 material = SubResource("StandardMaterial3D_gs3dp")
 
@@ -1073,7 +1064,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6831026, -7.795335, -11.416
 
 [node name="Yellow" type="CSGBox3D" parent="giant-spider/Armature_006/StepItemsWrap/FR_Target" unique_id=461913451 groups=["debug_item"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29707646, 0)
-visible = false
 size = Vector3(0.38, 1.44, 0.935)
 material = SubResource("StandardMaterial3D_npipk")
 
@@ -1084,7 +1074,6 @@ top_level = true
 
 [node name="Green" type="CSGBox3D" parent="giant-spider/Armature_006/StepItemsWrap/FR_Cur" unique_id=1598021937 groups=["debug_item"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6079626, 0)
-visible = false
 size = Vector3(1, 0.31, 1)
 material = SubResource("StandardMaterial3D_gs3dp")
 
@@ -1104,7 +1093,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9064364, -7.795335, -11.41
 
 [node name="Yellow" type="CSGBox3D" parent="giant-spider/Armature_006/StepItemsWrap/BR_Target" unique_id=1246757821 groups=["debug_item"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29707646, 0)
-visible = false
 size = Vector3(0.38, 1.44, 0.935)
 material = SubResource("StandardMaterial3D_npipk")
 
@@ -1115,7 +1103,6 @@ top_level = true
 
 [node name="Green" type="CSGBox3D" parent="giant-spider/Armature_006/StepItemsWrap/BR_Cur" unique_id=1557793283 groups=["debug_item"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6079626, 0)
-visible = false
 size = Vector3(1, 0.31, 1)
 material = SubResource("StandardMaterial3D_gs3dp")
 
@@ -1135,7 +1122,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6994193, -7.314023, 11.416
 
 [node name="Yellow" type="CSGBox3D" parent="giant-spider/Armature_006/StepItemsWrap/BL_Target" unique_id=99277675 groups=["debug_item"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29707646, 0)
-visible = false
 size = Vector3(0.38, 1.44, 0.935)
 material = SubResource("StandardMaterial3D_npipk")
 
@@ -1146,7 +1132,6 @@ top_level = true
 
 [node name="Green" type="CSGBox3D" parent="giant-spider/Armature_006/StepItemsWrap/BL_Cur" unique_id=1472626555 groups=["debug_item"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6079626, 0)
-visible = false
 size = Vector3(1, 0.31, 1)
 material = SubResource("StandardMaterial3D_gs3dp")
 
@@ -1158,7 +1143,6 @@ script = ExtResource("3_ri5fw")
 step_target = NodePath("../BL_Target")
 
 [node name="MoveDirOffset" type="MeshInstance3D" parent="giant-spider/Armature_006/StepItemsWrap" unique_id=718707751 groups=["debug_item"]]
-visible = false
 mesh = SubResource("BoxMesh_s3ta0")
 
 [node name="CSGWrap" type="Node3D" parent="." unique_id=97653571]

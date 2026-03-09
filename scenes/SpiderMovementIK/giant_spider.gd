@@ -42,6 +42,15 @@ var moving_dir_factor: float = 0
 
 
 func _physics_process(delta: float) -> void:
+	process_body_position(delta)
+	
+	_handle_movement(delta)
+
+	process_step_items_wrap()
+	process_steps()
+
+
+func process_body_position(delta: float) -> void:
 	var avg_normal = (legs[0].ray.get_collision_normal() + legs[1].ray.get_collision_normal() + legs[2].ray.get_collision_normal() + legs[3].ray.get_collision_normal()).normalized()
 	
 	# guard if at start rays doesn't hit the ground
@@ -63,11 +72,6 @@ func _physics_process(delta: float) -> void:
 	) / 4
 
 	position.y = lerp(position.y, avg.y + ground_offset, move_speed * y_smooth_factor * delta)
-	
-	_handle_movement(delta)
-
-	process_step_items_wrap()
-	process_steps()
 
 
 func _handle_movement(delta) -> void:
