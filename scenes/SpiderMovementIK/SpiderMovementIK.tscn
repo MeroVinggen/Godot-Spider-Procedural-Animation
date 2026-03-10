@@ -841,7 +841,7 @@ transform = Transform3D(1, 0, 0, 0, -0.020339252, -0.9997933, 0, 0.9997933, -0.0
 mesh = SubResource("ArrayMesh_ny3fp")
 
 [node name="leg2_3_L" type="BoneAttachment3D" parent="giant-spider/Armature_006/Skeleton3D" unique_id=246440973]
-transform = Transform3D(0.95964813, 0.03466142, -0.2790595, -0.08529988, -0.90973556, -0.40633115, -0.26795444, 0.41373855, -0.87006927, 3.439718, 5.4063663, 7.8356924)
+transform = Transform3D(0.95964855, 0.034109037, -0.27912593, -0.085276, -0.9105736, -0.40445468, -0.26796025, 0.41193694, -0.870922, 3.4486327, 5.2995358, 7.9023767)
 bone_name = "leg2_3.L"
 bone_idx = 11
 
@@ -850,7 +850,7 @@ transform = Transform3D(-0.19056113, -1.8272826e-07, 7.565526e-07, 1.3121125e-08
 mesh = SubResource("ArrayMesh_r6thl")
 
 [node name="leg2_2_L" type="BoneAttachment3D" parent="giant-spider/Armature_006/Skeleton3D" unique_id=430004123]
-transform = Transform3D(0.9636468, 0.2596792, 0.06286129, -0.09021454, 0.537706, -0.838292, -0.25148794, 0.80214643, 0.54158545, 2.1761222, 2.7898953, 3.9324574)
+transform = Transform3D(0.9635687, 0.26151124, 0.056099955, -0.09037238, 0.51575154, -0.85195833, -0.25173032, 0.8158506, 0.5205953, 2.1761222, 2.7898953, 3.9324574)
 bone_name = "leg2_2.L"
 bone_idx = 10
 
@@ -903,6 +903,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5023032, 0)
 mesh = SubResource("ArrayMesh_x1vqn")
 
 [node name="CCDIK3D_FL" type="CCDIK3D" parent="giant-spider/Armature_006/Skeleton3D" unique_id=598162201]
+max_iterations = 6
 angular_delta_limit = 0.4363323129985824
 deterministic = true
 setting_count = 2
